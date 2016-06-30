@@ -14,6 +14,7 @@
 		AF324F471D2588DB0017AEAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF324F451D2588DB0017AEAB /* LaunchScreen.storyboard */; };
 		AF324F521D2588DB0017AEAB /* canvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324F511D2588DB0017AEAB /* canvasTests.swift */; };
 		AF324F5D1D2588DB0017AEAB /* canvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324F5C1D2588DB0017AEAB /* canvasUITests.swift */; };
+		AF324F6B1D2589420017AEAB /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF324F6A1D2589420017AEAB /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AF324F581D2588DB0017AEAB /* canvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF324F5C1D2588DB0017AEAB /* canvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canvasUITests.swift; sourceTree = "<group>"; };
 		AF324F5E1D2588DB0017AEAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF324F6A1D2589420017AEAB /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AF324F3C1D2588DB0017AEAB /* AppDelegate.swift */,
 				AF324F3E1D2588DB0017AEAB /* ViewController.swift */,
 				AF324F401D2588DB0017AEAB /* Main.storyboard */,
+				AF324F6A1D2589420017AEAB /* CanvasViewController.swift */,
 				AF324F431D2588DB0017AEAB /* Assets.xcassets */,
 				AF324F451D2588DB0017AEAB /* LaunchScreen.storyboard */,
 				AF324F481D2588DB0017AEAB /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					AF324F381D2588DB0017AEAB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LQWCHDPX8E;
 					};
 					AF324F4C1D2588DB0017AEAB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF324F3F1D2588DB0017AEAB /* ViewController.swift in Sources */,
+				AF324F6B1D2589420017AEAB /* CanvasViewController.swift in Sources */,
 				AF324F3D1D2588DB0017AEAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = canvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = canvas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.canvas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
